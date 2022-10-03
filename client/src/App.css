@@ -1,0 +1,481 @@
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DIN Web", sans-serif;
+  overflow-x: hidden;
+  background-color: #282c35;
+  color: rgb(33, 206, 153);
+  height: 100%;
+  position: relative;
+}
+
+#App {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.addstockbutton {
+  margin-top: 20px !important;
+}
+
+.fullscreenSpinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.stockTableContainer {
+  width: 75%;
+}
+
+.appBody {
+  display: flex;
+  justify-content: center;
+}
+
+.wsbLogo {
+  width: 10% !important;
+  padding-right: 5px;
+  border-radius: 50px;
+}
+
+.wsbNavLogo {
+  height: 8vh;
+  padding: 0px;
+  border-radius: 50px;
+}
+
+.wsbLoginLogo {
+  width: 150px;
+  height: auto;
+  border-radius: 50px;
+  margin-top: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.wsbLoginLogo:hover {
+  transform: scale(1.05);
+}
+
+.wsbPhraseLogo {
+  height: 7vh;
+  padding: 0px;
+  margin-left: 100px;
+}
+
+.blankButton {
+  border: none;
+  background-color: rgb(33, 206, 153);
+}
+
+.stock-search-button {
+  border-radius: 4px;
+  background-color: rgb(33, 206, 153);
+  border: 0px solid rgb(33, 206, 153);
+}
+
+.stock-search-button:hover {
+  background-color: rgb(50, 250, 185);
+  border: none;
+}
+
+.stock-search-button:focus {
+  background-color: rgb(50, 250, 185) !important;
+  border: none;
+}
+
+.stock-search-button:visited {
+  background-color: rgb(50, 250, 185) !important;
+  border: none;
+}
+
+.stock-search-button:active {
+  background-color: rgb(50, 250, 185) !important;
+  border: none;
+}
+
+.stock-search-button:disabled {
+  background-color: rgb(50, 250, 185) !important;
+  border: none;
+}
+
+.mainSiteNavBar {
+  color: rgb(33, 206, 153);
+}
+
+.mainSiteNavBarLink {
+  color: rgb(33, 206, 153) !important;
+}
+
+.mainSiteNavBarLink:hover {
+  color: rgb(50, 250, 185) !important;
+}
+
+.no-spacing {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.no-spacing-news-col {
+  margin: 0px 0px 0px 4px !important;
+  padding: 0px 0px 0px 8px !important;
+}
+
+.no-spacing-news-col-2 {
+  margin: 0px 0px 0px 4px !important;
+  padding: 0px 0px 0px 8px !important;
+}
+
+.no-spacing-news-image {
+  margin-left: 4px !important;
+  margin-right: 0px !important;
+}
+
+.navbar-desktop-links {
+  margin-right: 50px;
+  color: rgb(33, 206, 153);
+}
+
+.splash-form-button {
+  background-color: rgb(33, 206, 153);
+  padding: 8px 16px 8px 16px;
+  border: none;
+  margin-top: 10px;
+}
+
+.splash-form-button:hover {
+  background-color: rgb(50, 250, 185);
+  border: none;
+}
+
+.splash-form-button:focus {
+  background-color: rgb(50, 250, 185) !important;
+  border: none;
+}
+
+.splash-form-button:visited {
+  background-color: rgb(50, 250, 185) !important;
+  border: none;
+}
+
+.splash-form-button:active {
+  background-color: rgb(50, 250, 185) !important;
+  border: none;
+}
+
+.splash-form-button:disabled {
+  background-color: rgb(50, 250, 185) !important;
+  border: none;
+}
+
+.green-theme-text {
+  color: rgb(33, 206, 153) !important;
+}
+
+.green-theme-text:hover {
+  color: rgb(50, 250, 185) !important;
+}
+
+th,
+td {
+  color: rgb(33, 206, 153) !important;
+}
+
+.bold-text {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.stock-history-entry {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+.paper-shadow-class {
+  box-shadow: 0 2px 15px 0 rgba(26, 26, 27, 0.637);
+}
+
+.main-app-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+
+  padding-bottom: 10px;
+}
+
+.footer-bg {
+  background-color: #282c35;
+}
+
+.stock-table-header {
+  background-color: #282c35 !important;
+}
+
+.stock-table-row {
+  background-color: #282c35 !important;
+}
+
+.stock-table-row:hover {
+  background-color: #282c35a4 !important;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-vertical {
+  vertical-align: middle;
+}
+
+.stock-news-image {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle !important;
+}
+
+.splashImage {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+}
+
+.splashImageFace {
+  border-radius: 100%;
+  height: 150px;
+}
+
+.spacer-row {
+  margin-top: 10px;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) {
+  .wsbLogo {
+    width: 5% !important;
+  }
+  .stockTableCellDesktop {
+    display: none;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wsbLogo {
+    width: 4% !important;
+  }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .wsbLogo {
+    width: 3% !important;
+  }
+
+  .splash-form-left-div {
+    margin-left: 120px;
+    margin-top: 60px;
+  }
+
+  .splashImageFace {
+    border-radius: 100%;
+    height: 200px;
+  }
+
+  .spacer-row {
+    margin-top: 60px;
+  }
+
+  .splashImage {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20%;
+    margin-top: 80px;
+    width: 500px;
+  }
+
+  .wsbNavLogo {
+    height: 8vh;
+    padding: 0px;
+    border-radius: 50px;
+    margin-left: 100px;
+  }
+
+  .wsbLoginLogo {
+    width: 10% !important;
+    margin-top: 10px;
+    border-radius: 50px;
+  }
+  .blankButton {
+    display: none;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .bm-burger-button {
+    display: none;
+  }
+
+  .stock-news-image {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .stock-news-article-title {
+    color: rgb(33, 206, 153) !important;
+  }
+
+  .stock-news-article-title:hover {
+    color: rgb(50, 250, 185) !important;
+    text-decoration: underline !important;
+  }
+}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .wsbLogo {
+    width: 3% !important;
+  }
+
+  .wsbLoginLogo {
+    width: 10% !important;
+    margin-top: 10px;
+    border-radius: 50px;
+  }
+  .blankButton {
+    display: none;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .bm-burger-button {
+    display: none;
+  }
+
+  .wsbNavLogo {
+    height: 8vh;
+    padding: 0px;
+    border-radius: 50px;
+    margin-left: 100px;
+  }
+
+  .stock-news-image {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .stock-news-article-title {
+    color: rgb(33, 206, 153) !important;
+  }
+
+  .stock-news-article-title:hover {
+    color: rgb(50, 250, 185) !important;
+    text-decoration: underline !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .stock-news-article-title {
+    color: rgb(33, 206, 153) !important;
+    text-align: justify !important;
+    font-size: 0.8rem !important;
+  }
+
+  .stock-news-article-title:hover {
+    color: rgb(50, 250, 185) !important;
+    text-decoration: underline !important;
+    text-align: justify !important;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~ SIDEBAR STYLES  ~~~~~~~~~~~~~~~~ */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 26px;
+  right: 26px;
+  top: 26px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: rgb(33, 206, 153);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: rgb(80, 182, 80);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: rgb(33, 206, 153);
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 1em;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* ~~~~~~~~~~~~~~~~ END SIDEBAR STYLES  ~~~~~~~~~~~~~~~~ */
